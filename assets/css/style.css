@@ -1,0 +1,909 @@
+/* ------------------------------------------------------------------
+ * File         : style.css
+ * Version      : 1.0
+ * Author       : indonez
+ * Author URI   : http://www.indonez.com
+ *
+ * Indonez Copyright 2019 All Rights Reserved.
+ * ------------------------------------------------------------------
+
+/* Indonez Header */
+header {
+    transition: background-color ease 300ms;
+}
+
+header .uk-section {
+    border-top: 11px solid #65696e;
+}
+
+header .uk-navbar-right a.uk-button {
+    color: #468efc;
+    border-left: 1px solid #DADADA;
+    margin-left: 20px;
+    padding-left: 40px;
+}
+
+.in-header-logo {
+    margin-left: 16px;
+}
+
+.in-header-logo img {
+    margin: 10px 8px 0 0;
+}
+
+.in-header-logo h1 {
+    line-height: 0px;
+    padding-top: 19px;
+}
+
+.in-header-logo h1 a.uk-logo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #6f7478;
+}
+
+.in-header-logo p.uk-text-small {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    margin: -5px 0 10px 0;
+}
+
+/* Indonez Sticky Menu */
+.in-sticky {
+    background-color: #f8f8f8;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.in-sticky .uk-section {
+    border-top: none;
+    height: 70px;
+}
+
+.in-sticky .uk-container::after {
+    border-bottom: 0;
+}
+
+.in-sticky .in-header-logo {
+    margin: -52px 0 0px 0;
+}
+
+.in-sticky .in-header-logo h1,
+.in-sticky .in-header-logo p {
+    display: none;
+}
+
+.in-sticky .uk-navbar-nav>li>a {
+    position: relative;
+    top: -21px;
+    min-height: 70px;
+}
+
+.in-sticky [class*='uk-navbar-dropdown-bottom'] {
+    margin-top: 0px;
+}
+
+.in-sticky a.uk-button {
+    position: relative;
+    top: -20px;
+}
+
+/* Indonez Footer */
+footer .uk-light .uk-label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    background: #7f8387;
+    color: #fff;
+    border-radius: 25px;
+    padding: 4px 15px;
+}
+
+footer .uk-light .uk-label svg[data-svg^='fa-'] {
+    position: relative;
+    top: -1px;
+}
+
+footer .uk-light .uk-list-divider>li {
+    line-height: 32px;
+}
+
+footer .uk-light .uk-list-divider>li a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer .uk-light .uk-list-divider>li a:hover {
+    text-decoration: none;
+}
+
+footer .uk-light .uk-list-divider>li span {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+footer .uk-light .uk-list-divider>li::before {
+    content: "";
+    float: left;
+    width: 0.6em;
+    height: 0.6em;
+    margin: 12px 15px 0 0;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23d1d3d4%22%20stroke-width%3D%221.03%22%20points%3D%227%204%2013%2010%207%2016%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+footer .uk-light .in-footer-subnav {
+    font-size: 13px;
+    margin-bottom: -60px;
+    padding-top: 10px;
+}
+
+footer .uk-light .in-footer-subnav .uk-subnav>* {
+    padding-right: 20px;
+}
+
+footer .uk-light .in-footer-subnav .uk-subnav>* a {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: capitalize;
+}
+
+footer .uk-section {
+    background-image: radial-gradient(ellipse farthest-side at center top, #345E89 0%, #345E89 60%);
+}
+
+footer .in-header-logo {
+    margin-left: 0px;
+}
+
+footer .in-header-logo h1 a.uk-logo,
+footer .in-header-logo h1 a:hover.uk-logo {
+    color: #e3e3e3;
+}
+
+/* Indonez Slideshow */
+.in-slide-container .in-slideshow {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 14px;
+}
+
+.in-slide-container .in-slideshow .uk-light h1,
+.in-slide-container .in-slideshow .uk-light p {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.in-slide-container .uk-slideshow-items {
+    background: #fff;
+}
+
+.in-slide-container .uk-slideshow-items li .uk-text-lead {
+    font-size: 22px;
+    color: #808080;
+}
+
+.in-slide-container .uk-slideshow-items li .uk-text-small {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #808080;
+}
+
+.in-slide-container .uk-slidenav-container {
+    margin: 0 40px 20px 0;
+}
+
+/* Indonez breadcrumb */
+.in-breadcrumb {
+    padding: 12px 0 12px 0;
+}
+
+.in-breadcrumb h2 {
+    margin-top: 5px;
+}
+
+.in-breadcrumb .uk-text-small {
+    margin-top: 0px;
+    line-height: 26px;
+}
+
+.in-breadcrumb .uk-breadcrumb {
+    margin-bottom: -36px;
+    padding: 3px 15px 0px 15px;
+    background: #fff;
+}
+
+/* Indonez icon wrapper */
+.in-icon-wrapper {
+    font-family: 'Libre Franklin', sans-serif;
+    box-sizing: border-box;
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    margin-top: -3px;
+    color: #5c5c5c;
+}
+
+.in-icon-wrapper.circle {
+    border-radius: 500px;
+    background: #f0f0f0;
+}
+
+.in-icon-wrapper.small {
+    width: 38px;
+    height: 38px;
+}
+
+.in-icon-wrapper.large {
+    width: 128px;
+    height: 128px;
+}
+
+.in-icon-wrapper.btn-mix {
+    margin-right: -60px;
+    transform: rotate(8deg);
+}
+
+.in-icon-wrapper.btn-mix+.uk-float-left a.uk-button {
+    padding-left: 25px;
+    padding-right: 22px;
+}
+
+/* Indonez client logo */
+.in-client-logo.uk-card {
+    padding: 10px;
+    box-shadow: inset 0px 0px 0px 2px #e5e5e5;
+    border-radius: 5px;
+}
+
+/* Indonez colored card */
+.in-colored-card .uk-card {
+}
+
+.in-colored-card .in-icon-wrapper {
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.in-colored-card a:hover {
+    text-decoration: none;
+}
+
+.in-colored-card h5 {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.in-colored-card h5 span {
+    position: relative;
+    top: -1px;
+}
+
+.in-colored-card p {
+    color: rgba(0, 0, 0, 0.5);
+	
+}
+
+.in-colored-card.orange .uk-card {
+    background-color: #ffeaa7;
+}
+
+.in-colored-card.orange .in-icon-wrapper {
+    background-color: #fdcb6e;
+}
+
+
+.in-colored-card.green .uk-card {
+    background-color: #55efc4;
+}
+
+.in-colored-card.green .in-icon-wrapper {
+    background-color: #06caa4;
+}
+
+.in-colored-card.red .uk-card {
+    background-color: #fab1a0;
+}
+
+.in-colored-card.red .in-icon-wrapper {
+    background-color: #e88067;
+}
+
+.in-colored-card.blue .uk-card {
+    background-color: #81ecec;
+}
+
+.in-colored-card.blue .in-icon-wrapper {
+    background-color: #00cec9;
+}
+
+.in-colored-card.purple .uk-card {
+    background-color: #b0aafe;
+}
+
+.in-colored-card.purple .in-icon-wrapper {
+    background-color: #9184f4;
+}
+
+.in-colored-card.black .uk-card {
+    border-radius: 6px;
+    color: #8f8f8f;
+}
+
+.in-colored-card.black .in-icon-wrapper {
+    background-color: #949494;
+}
+
+
+/* Indonez pricing */
+.in-pricing .uk-card {
+    overflow: hidden;
+    border-radius: 6px;
+    color: #8f8f8f;
+}
+
+.in-pricing .uk-card-header {
+    border-top: 4px solid #bababa;
+    text-align: center;
+}
+
+.in-pricing .uk-card-header h3 {
+    margin: 12px 0 -20px 0;
+}
+
+.in-pricing .uk-card-header h4 {
+    font-size: 48px;
+    margin: -10px 0 -10px 0;
+}
+
+.in-pricing .uk-card-header .uk-label {
+    background-color: #d8d8d8;
+    color: #747474;
+    margin-bottom: 22px;
+}
+
+.in-pricing .uk-card-header h4 span.in-pricing-currency {
+    font-size: 18px;
+}
+
+.in-pricing .uk-card-header h4 span.in-pricing-currency {
+    position: relative;
+    top: -20px;
+}
+
+.in-pricing.in-pricing-highlight .uk-card-header {
+    border-top: 4px solid #428dff;
+}
+
+.in-pricing.in-pricing-highlight .uk-card-header .uk-label {
+    background-color: #428dff;
+    color: #333;
+}
+
+.in-pricing .uk-card-body {
+    background: #f7f7f7;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.in-pricing .uk-card-body .uk-list {
+    font-size: 15px;
+    margin: 12px 0 52px 0;
+}
+
+.in-pricing .uk-card-body .uk-list-bullet>li::before {
+    top: 2px;
+    background-size: 50%;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20fill%3D%22%23666666%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M173.898%20439.404l-166.4-166.4c-9.997-9.997-9.997-26.206%200-36.204l36.203-36.204c9.997-9.998%2026.207-9.998%2036.204%200L192%20312.69%20432.095%2072.596c9.997-9.997%2026.207-9.997%2036.204%200l36.203%2036.204c9.997%209.997%209.997%2026.206%200%2036.204l-294.4%20294.401c-9.998%209.997-26.207%209.997-36.204-.001z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.in-pricing .uk-card-body a.uk-button {
+    position: relative;
+    left: 50%;
+    margin-right: -50%;
+    margin-bottom: -10px;
+    transform: translate(-50%, -50%);
+}
+
+/* Indonez testimoni slider */
+.in-testimoni-slider blockquote {
+    font-size: 17px;
+    font-style: normal;
+    line-height: 28px;
+    color: #8f8f8f;
+}
+
+.in-testimoni-slider blockquote .in-testimoni-card {
+    border: 1px solid #dbdcde;
+    border-radius: 4px;
+    display: block;
+    padding: 20px 28px;
+}
+
+.in-testimoni-slider blockquote .in-testimoni-card::after {
+    border: 1px solid #dbdcde;
+    border-top: none;
+    box-shadow: 0 0 2px #ddd;
+    content: "";
+    bottom: -23px;
+    left: -20px;
+    width: 114%;
+    height: 1px;
+    display: block;
+    position: relative;
+}
+
+.in-testimoni-slider blockquote footer::before {
+    content: " ";
+}
+
+.in-testimoni-slider blockquote footer h5 {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin-bottom: 5px;
+}
+
+.in-testimoni-slider img {
+    margin-top: 0px;
+}
+
+.in-testimoni-nav {
+    margin: -73px 5px 0 0;
+    float: right;
+}
+
+.in-testimoni-nav a.uk-slidenav {
+    color: rgba(71, 142, 252, 0.7);
+    padding: 0 4px;
+}
+
+.in-testimoni-nav a svg {
+    width: 10px;
+}
+
+/* Indonez customer card */
+.in-customer-card {
+    background-color: #f8f8f8;
+    border-radius: 4px;
+}
+
+.in-customer-card .uk-card-header {
+    padding: 30px;
+}
+
+.in-customer-card .uk-card-footer {
+    padding: 30px;
+}
+
+.in-customer-card .uk-card-body {
+    padding: 20px 30px;
+}
+
+.in-customer-card img {
+    margin: 0px;
+}
+
+.in-customer-card blockquote {
+    font-size: 18px;
+    line-height: 28px;
+    color: #8f8f8f;
+}
+
+.in-customer-card footer span {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #4f4f4f;
+    letter-spacing: 0px;
+}
+
+.in-customer-card footer {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.in-customer-card cite {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #bebebe;
+}
+
+.in-customer-card.uk-background-contain {
+    background-size: 55% auto;
+}
+
+/* Indonez roadmap */
+.in-roadmap hr {
+    margin-bottom: 0px;
+}
+
+.in-roadmap .uk-card-default {
+    border: 2px solid #dbdbdb;
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+.in-roadmap-branch .in-icon-wrapper {
+    position: relative;
+    top: 20px;
+    left: 38px;
+}
+
+.in-roadmap-branch .in-roadmap-title {
+    height: 98px;
+    border-left: 2px solid #dbdbdb;
+    margin-left: 5px;
+    padding-left: 40px;
+}
+
+.in-roadmap-branch .in-roadmap-title span.uk-label {
+    margin-top: -4px;
+}
+
+/* Indonez blog */
+.in-blog p.uk-article-meta {
+    font-family: Arial;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 10px 0 0px 0;
+}
+
+.in-blog p.uk-article-meta span.uk-label {
+    background-color: #428dff;
+    font-size: 11px;
+    text-transform: uppercase;
+    position: relative;
+    top: -1px;
+    margin-right: 10px;
+    padding: 1px 10px;
+}
+
+.in-blog img {
+    border-radius: 5px;
+}
+
+.in-blog .uk-icon-button {
+    background-color: #37474f;
+    color: white;
+}
+
+.in-blog .uk-icon-button.twitter {
+    background-color: #5fa8dc;
+    color: white;
+}
+
+.in-blog .uk-icon-button.facebook {
+    background-color: #3a5a98;
+    color: white;
+}
+
+.in-blog .uk-icon-button.linkedin {
+    background-color: #0078b5;
+    color: white;
+}
+
+.in-quote-post {
+    background-color: #84817a;
+    border-radius: 5px;
+}
+
+.in-quote-post blockquote h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    margin-top: -5px;
+}
+
+.in-quote-post blockquote footer cite {
+    font-size: 15px;
+    color: #b5b5b5;
+}
+
+.in-quote-post blockquote footer::before {
+    color: #b5b5b5;
+}
+
+.in-link-post.uk-background-primary {
+    background: #ffeaa7 url("data:image/svg+xml;charset=UTF-8,%3Csvg%20fill%3D%22%23ffd792%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M326.612%20185.391c59.747%2059.809%2058.927%20155.698.36%20214.59-.11.12-.24.25-.36.37l-67.2%2067.2c-59.27%2059.27-155.699%2059.262-214.96%200-59.27-59.26-59.27-155.7%200-214.96l37.106-37.106c9.84-9.84%2026.786-3.3%2027.294%2010.606.648%2017.722%203.826%2035.527%209.69%2052.721%201.986%205.822.567%2012.262-3.783%2016.612l-13.087%2013.087c-28.026%2028.026-28.905%2073.66-1.155%20101.96%2028.024%2028.579%2074.086%2028.749%20102.325.51l67.2-67.19c28.191-28.191%2028.073-73.757%200-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037%2016.037%200%200%201-6.947-12.606c-.396-10.567%203.348-21.456%2011.698-29.806l21.054-21.055c5.521-5.521%2014.182-6.199%2020.584-1.731a152.482%20152.482%200%200%201%2020.522%2017.197zM467.547%2044.449c-59.261-59.262-155.69-59.27-214.96%200l-67.2%2067.2c-.12.12-.25.25-.36.37-58.566%2058.892-59.387%20154.781.36%20214.59a152.454%20152.454%200%200%200%2020.521%2017.196c6.402%204.468%2015.064%203.789%2020.584-1.731l21.054-21.055c8.35-8.35%2012.094-19.239%2011.698-29.806a16.037%2016.037%200%200%200-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639%200-101.83l67.2-67.19c28.239-28.239%2074.3-28.069%20102.325.51%2027.75%2028.3%2026.872%2073.934-1.155%20101.96l-13.087%2013.087c-4.35%204.35-5.769%2010.79-3.783%2016.612%205.864%2017.194%209.042%2034.999%209.69%2052.721.509%2013.906%2017.454%2020.446%2027.294%2010.606l37.106-37.106c59.271-59.259%2059.271-155.699.001-214.959z%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+    background-position: bottom right;
+    background-size: 7%;
+    border-radius: 5px;
+}
+
+.in-link-post h3 a {
+    margin-bottom: 0px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.in-link-post .uk-text-truncate {
+    margin-bottom: 0px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.in-blog-sidebar .uk-card-body {
+    padding: 26px 26px;
+}
+
+.in-blog-sidebar .uk-search-default .uk-search-input {
+    height: 46px;
+    padding-left: 20px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.in-blog-sidebar .uk-search-default .uk-search-icon-flip {
+    padding-right: 10px;
+}
+
+/* Indonez widget */
+.in-widget-category li a span {
+    position: relative;
+    top: 5px;
+}
+
+.in-widget-popular.uk-list-divider>li:nth-child(n+2) {
+    margin-top: 18px;
+    padding-top: 18px;
+}
+
+.in-widget-popular li img {
+    width: 77px;
+    height: 77px;
+}
+
+.in-widget-popular li a {
+    position: relative;
+    top: -7px;
+}
+
+.in-widget-popular li span {
+    font-weight: 800;
+    font-size: 12px;
+    width: 100%;
+    margin: 1px 0 -10px 0;
+    float: left;
+}
+
+.in-widget-popular li a span {
+    color: #428dff;
+}
+
+.in-widget-archive li a span.uk-label {
+    font-size: 11px;
+    background: #333;
+    text-transform: uppercase;
+    padding: 1px 6px 0px 6px;
+    position: relative;
+    top: 6px;
+}
+
+.in-widget-archive li a:hover span.uk-label {
+    background-color: #428dff;
+}
+
+.in-widget-tag a.uk-label {
+    margin-right: 5px;
+}
+
+.in-widget-category li a,
+.in-widget-popular li a,
+.in-widget-archive li a {
+    color: #b4b4b4;
+}
+
+.in-widget-category li a:hover,
+.in-widget-popular li a:hover,
+.in-widget-archive li a:hover {
+    color: #428dff;
+}
+
+/* Indonez plyr.io */
+.in-video-wrapper .plyr,
+.in-audio-wrapper .plyr {
+    border-radius: 5px;
+}
+
+.in-audio-wrapper>.plyr--audio .plyr__controls {
+    background-color: #2d3436;
+}
+
+.in-audio-wrapper .plyr__controls__item:first-child,
+.in-audio-wrapper .plyr__controls__item.plyr__time,
+.in-audio-wrapper .plyr button {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.in-audio-wrapper .plyr__menu__container .plyr__control {
+    color: #4a5764;
+}
+
+.in-audio-wrapper .plyr--full-ui.plyr--audio input[type=range]::-webkit-slider-runnable-track {
+    background-color: rgba(193, 201, 209, 0.26);
+}
+
+.in-audio-wrapper .plyr--audio .plyr__progress__buffer {
+    color: rgba(193, 201, 209, 0.46);
+}
+
+/* Indonez totop */
+.in-totop {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 43px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    position: relative;
+    top: 30px;
+    right: 40px;
+}
+
+a.in-totop {
+    color: #65696e;
+}
+
+a:hover.in-totop {
+    color: #9f9f9f;
+}
+
+/* Indonez blockquote */
+.in-blockquote {
+    border-left: 2px solid #dbdbdb;
+    margin: 30px 0 30px 45px;
+    padding-left: 40px;
+}
+
+/* Indonez image shadow */
+.in-img-shadow {
+    box-shadow: 20px 20px 0px 0px #428dff;
+}
+
+/* uk-accordion remove border bottom */
+.uk-open>.uk-accordion-title {
+    border-bottom: none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* tablet potrait and lower */
+@media (max-width: 960px) {
+    header .uk-width-auto\@m {
+        display: initial;
+    }
+
+    .in-header-logo {
+        margin: 24px 0;
+    }
+
+    .in-header-logo p.uk-text-small {
+        margin-bottom: 24px;
+    }
+
+    .in-sticky .in-mobile-nav {
+        margin-top: 22px;
+    }
+
+    .in-sticky .in-header-logo {
+        margin-top: 8px;
+    }
+
+    .in-mobile-nav a,
+    .uk-close-large {
+        border: 1px solid #dadada;
+        border-radius: 5px;
+        padding: 1px 14px;
+    }
+
+    .uk-close-large {
+        top: 20px;
+        right: 20px;
+        padding: 10px 16px;
+    }
+
+    .uk-modal-dialog .uk-nav-sub [data-svg^='fa-'] {
+        margin: -2px 0 0 7px;
+    }
+
+    .uk-modal-dialog ul.uk-nav-primary {
+        border-bottom: 1px solid #dadada;
+        margin-bottom: 35px;
+        padding-bottom: 23px;
+    }
+
+    .in-breadcrumb h2 {
+        margin-top: 0px;
+    }
+
+    .in-icon-wrapper.btn-mix {
+        margin-right: -50px;
+    }
+
+    footer .uk-light .in-footer-subnav {
+        margin-bottom: 20px;
+    }
+
+    .in-custom-card .uk-card:last-child {
+        border-right: none;
+    }
+
+    .in-roadmap>.uk-child-width-1-1>div {
+        margin-top: 0px;
+    }
+
+    .in-blog .uk-margin-large-left {
+        margin-left: 0px !important;
+    }
+
+    .in-blockquote {
+        margin: 30px 0 20px 30px;
+        padding-left: 30px;
+    }
+
+    .uk-comment-list .uk-comment~ul {
+        padding-left: 0px;
+    }
+
+    /* helper */
+    .in-margin-negative-top\@s {
+        margin-top: -30px !important;
+    }
+
+    .in-margin-remove-top\@s {
+        margin-top: 0px !important;
+    }
+
+    .in-margin-top\@s {
+        margin-top: 20px !important;
+    }
+
+    .in-margin-small-top\@s {
+        margin-top: 10px !important;
+    }
+
+    .in-margin-large-top\@s {
+        margin-top: 60px !important;
+    }
+
+    .in-margin-negative-bottom\@s {
+        margin-bottom: -30px !important;
+    }
+
+    .in-margin-remove-bottom\@s {
+        margin-bottom: 0px !important;
+    }
+
+    .in-margin-bottom\@s {
+        margin-bottom: 20px !important;
+    }
+
+    .in-margin-small-bottom\@s {
+        margin-bottom: 10px !important;
+    }
+
+    .in-margin-large-bottom\@s {
+        margin-bottom: 60px !important;
+    }
+
+    .in-margin-remove-left\@s {
+        margin-left: 0px !important;
+    }
+
+    .in-margin-remove-right\@s {
+        margin-right: 0px !important;
+    }
+}

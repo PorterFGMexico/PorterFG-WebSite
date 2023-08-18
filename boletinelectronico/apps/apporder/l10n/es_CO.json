@@ -1,0 +1,6 @@
+{ "translations": {
+    "AppOrder" : "Orden de la aplicación",
+    "App Order" : "Orden de la aplicación",
+    "Drag the app icons to change their order." : "Arrastra los íconos de la aplicación para cambiar su orden."
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
