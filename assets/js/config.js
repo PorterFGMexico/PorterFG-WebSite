@@ -7,7 +7,7 @@
  * Indonez Copyright 2019 All Rights Reserved.
  * -------------------------------------------------------------------------- 
  * javascript handle initialization
-    1. Homepage uikit slideshow 
+    1. Iniciopage uikit slideshow 
     2. Active Menu Jquery
     3. Dynamic Breadcrumb Jquery
  * -------------------------------------------------------------------------- */
@@ -17,8 +17,8 @@
     "use strict";
 
     let themeApp = {
-        //----------- 1. Homepage uikit slideshow -----------
-        theme_homeSlideshow: function () {
+        //----------- 1. Iniciopage uikit slideshow -----------
+        theme_InicioSlideshow: function () {
             let slideshow = UIkit.slideshow('.in-slideshow', {
                 autoplay: true,
                 autoplayInterval: 7000,
@@ -34,10 +34,10 @@
                 let li = $(element).attr('href');
                 let path = window.location.pathname.split("/").pop();
                 if (path == '') {
-                    path = 'index.html';
+                    path = 'index.php';
                 }
-                if (path == 'single.html') {
-                    path = 'blog.html';
+                if (path == 'single.php') {
+                    path = 'blog.php';
                 }
                 if (path == li) {
                     $(element).parents('li').addClass("uk-active");
@@ -49,12 +49,12 @@
             let breadcrumb = $('.uk-breadcrumb');
             breadcrumb.breadcrumbsGenerator({
                 sitemaps: '.uk-navbar-nav',
-                index_type: 'index.html'
+                index_type: 'index.php'
             });
         },
         // theme init
         theme_init: function () {
-            themeApp.theme_homeSlideshow();
+            themeApp.theme_InicioSlideshow();
             themeApp.theme_activeMenu();
             themeApp.theme_dynamicBreadcrumb();
         }

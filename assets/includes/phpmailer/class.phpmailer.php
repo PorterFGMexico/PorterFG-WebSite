@@ -11,7 +11,7 @@
  * @copyright 2012 - 2014 Marcus Bointon
  * @copyright 2010 - 2012 Jim Jagielski
  * @copyright 2004 - 2009 Andy Prevost
- * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @license http://www.gnu.org/copyleft/lesser.php GNU Lesser General Public License
  * @note This program is distributed in the hope that it will be useful - WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
  * FITNESS FOR A PARTICULAR PURPOSE.
@@ -367,7 +367,7 @@ class PHPMailer
      * Whether to generate VERP addresses on send.
      * Only applicable when sending via SMTP.
      * @link https://en.wikipedia.org/wiki/Variable_envelope_return_path
-     * @link http://www.postfix.org/VERP_README.html Postfix VERP info
+     * @link http://www.postfix.org/VERP_README.php Postfix VERP info
      * @var boolean
      */
     public $do_verp = false;
